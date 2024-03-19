@@ -70,3 +70,18 @@ variable "port_list" {
     8080,
   ]
 }
+
+variable "enabled"{
+  type = bool
+  default = false
+}
+
+variable "backend-dynamodb-name" {
+  type = string
+  default = "remote-terraform-state-lock"
+}
+
+variable "backend-s3-name" {
+  type = string
+  default = "okey-ec2-bucket"
+}
